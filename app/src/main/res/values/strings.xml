@@ -6,4 +6,10 @@
     <string name="multiply_button_text">multiply</string>
     <string name="divide_button_text">Divide</string>
     <string name="error_text">Error</string>
+    <string name="sin_a_button_text">SIN(A)</string>
+    <string name="cos_a_button_text">COS(A)</string>
+    <string name="sqrt_a_button_text">SQRT(A)</string>
+    <string name="sqr_a_button_text">SQR(A)</string>
+    <string name="tg_a_button_text">TG(A)</string>
+    <string name="ctg_a_button_text">CTD(A)</string>
 </resources>
