@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab01Calculator</string>
+    <string name="add_button_text">Add</string>
+    <string name="result_label">Result:</string>
+    <string name="subtract_button_text">Subtract</string>
+    <string name="multiply_button_text">multiply</string>
+    <string name="divide_button_text">Divide</string>
+    <string name="error_text">Error</string>
+</resources>
