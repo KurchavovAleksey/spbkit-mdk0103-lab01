@@ -21,37 +21,37 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         fieldA = findViewById(R.id.editTextA)
-        fieldB = findViewById(R.id.editTextB)
+        fieldB = findViewById(R.id.editTextB)  // Курчавов Алексей 204 группа СПБКИТ
         resultView = findViewById(R.id.textViewResult)
 
         val twoOperandsHandler = View.OnClickListener { view ->
             var result: Float? = null
 
-            try {
+            try {  // Курчавов Алексей 204 группа СПБКИТ
                 val a = fieldA?.text.toString().toFloat()
                 val b = fieldB?.text.toString().toFloat()
 
                 when (view.id) {
-                    R.id.buttonAdd -> result = a + b
+                    R.id.buttonAdd -> result = a + b  // Курчавов Алексей 204 группа СПБКИТ
                     R.id.buttonSubtract -> result = a - b
                     R.id.buttonMultiply -> result = a * b
                     R.id.buttonDivide -> if (b != 0f) result = a / b
                 }
 
-                setResult(result.toString())
+                setResult(result.toString())  // Курчавов Алексей 204 группа СПБКИТ
 
             } catch (e: NumberFormatException) {
-                setResult(getString(R.string.error_text))
+                setResult(getString(R.string.error_text))  // Курчавов Алексей 204 группа СПБКИТ
             }
         }
 
         val oneOperandHandler = View.OnClickListener { view ->
-            var result: Float? = null
+            var result: Float? = null  // Курчавов Алексей 204 группа СПБКИТ
 
             try {
                 val a = fieldA?.text.toString().toFloat()
 
-                when (view.id) {
+                when (view.id) {  // Курчавов Алексей 204 группа СПБКИТ
                     R.id.buttonSinA -> if (-1 <= a && a <= 1) result = kotlin.math.sin(a)
                     R.id.buttonCosA -> if (-1 <= a && a <= 1) result = kotlin.math.cos(a)
                     R.id.buttonSqrtA -> if (a >= 0) result = kotlin.math.sqrt(a)
@@ -63,27 +63,27 @@ class MainActivity : AppCompatActivity() {
                 setResult(result.toString())
 
             } catch (e: NumberFormatException) {
-                setResult(getString(R.string.error_text))
+                setResult(getString(R.string.error_text))  // Курчавов Алексей 204 группа СПБКИТ
             }
         }
 
-        findViewById<Button>(R.id.buttonAdd).setOnClickListener(twoOperandsHandler)
+        findViewById<Button>(R.id.buttonAdd).setOnClickListener(twoOperandsHandler)  // Курчавов Алексей 204 группа СПБКИТ
         findViewById<Button>(R.id.buttonSubtract).setOnClickListener(twoOperandsHandler)
         findViewById<Button>(R.id.buttonMultiply).setOnClickListener(twoOperandsHandler)
         findViewById<Button>(R.id.buttonDivide).setOnClickListener(twoOperandsHandler)
 
         findViewById<Button>(R.id.buttonSinA).setOnClickListener(oneOperandHandler)
-        findViewById<Button>(R.id.buttonCosA).setOnClickListener(oneOperandHandler)
+        findViewById<Button>(R.id.buttonCosA).setOnClickListener(oneOperandHandler)  // Курчавов Алексей 204 группа СПБКИТ
 
         findViewById<Button>(R.id.buttonSqrtA).setOnClickListener(oneOperandHandler)
         findViewById<Button>(R.id.buttonSqrA).setOnClickListener(oneOperandHandler)
-        findViewById<Button>(R.id.buttonTgA).setOnClickListener(oneOperandHandler)
+        findViewById<Button>(R.id.buttonTgA).setOnClickListener(oneOperandHandler)  // Курчавов Алексей 204 группа СПБКИТ
         findViewById<Button>(R.id.buttonCtgA).setOnClickListener(oneOperandHandler)
     }
 
     private fun setResult(resultTxt: String?) {
         if (resultTxt == null || resultTxt == "null") {
-            setResult(getString(R.string.error_text))
+            setResult(getString(R.string.error_text))  // Курчавов Алексей 204 группа СПБКИТ
 
         } else {
             resultView?.text = resultTxt
