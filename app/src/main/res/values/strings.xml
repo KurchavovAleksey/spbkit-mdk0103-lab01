@@ -12,4 +12,7 @@
     <string name="sqr_a_button_text">SQR(A)</string>
     <string name="tg_a_button_text">TG(A)</string>
     <string name="ctg_a_button_text">CTD(A)</string>
+    <string name="A_info">A:</string>
+    <string name="B_info">B:</string>
+    <string name="author_string">Курчавов Алексей 204 группа СПБКИТ</string>
 </resources>
